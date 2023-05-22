@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+ 
+  <title>ByeCar</title>
+
+</head>
+<body>
+  <section class="header">
+    <div class="header-logo">
+      <img src="/images/logoDNC.svg" alt="Logo da DNC">
+    </div>
+    <h1>ByeCar</h1>
+  </section>
+  <main>
+    <section class="main">
+      <div class="main-wrapper">
+        <h2>
+          Ter <strong>uma moto</strong> por assinatura
+          <br>
+          nunca foi tão fácil!
+        </h2>
+        <div class="main-img">
+          <img src="/images/MulherMoto.png" alt="Uma mulher sobre uma moto sorrindo">
+        </div>
+      </div>
+      <div class="main-carrocel">
+        <h2>Conheça nossas <span>motos</span>!</h2>
+        <div class="carrocel">
+          <img class="setas" id="seta1" src="/images/seta1.svg" alt="seta" onclick="show(- 1)">
+          <div class="cards">
+            <ul class="Carrocel-list">
+                <li class="list" id="moto1">
+                    <div class="card">
+                      <h3>Scooter Elétrica Voltz EV1</h3>
+                      <div class="img-moto">
+                        <img src="/images/moto1.svg" alt="Foto de uma Scooter Elétrica">
+                      </div>
+                      <h6>
+                        A patir de <br>
+                        <span>R$ 619,90</span>
+                        <p>Plano de 30 meses</p>
+                      </h6>
+                    </div>
+                  <button class="card-button" onclick="InfoCardShow(index + 1)">Saiba mais</button>
+                </li>
+                <li class="list" id="moto2">
+                 <div class="card">
+                    <h3>Honda CB 500X</h3>
+                    <div class="img-moto">
+                      <img src="/images/moto2.svg" alt="Foto de uma Honda CB 500X">
+                    </div>
+                    <h6>
+                      A patir de <br>
+                      <span>R$ 619,90</span>
+                      <p>Plano de 30 meses</p>
+                    </h6>
+                 </div>
+                  <button class="card-button" onclick="InfoCardShow(index - 1)">Saiba mais</button>
+                </li>
+            </ul>
+          </div>
+          <img class="setas" id="seta2" src="/images/seta2.svg" alt="seta" onclick="show(+ 1)">
+        </div>
+      </div>
+    </section>
+    <div class="popUp" id="popUp"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

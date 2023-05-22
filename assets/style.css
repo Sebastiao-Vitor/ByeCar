@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* acessibilidade */
+  font-size: 62.5%;
+}
+
+:root {
+  --bc-white: white;
+  --bc-black:  #303030;
+  --bc-azul: rgba(77, 188, 233, 0.75);
+
+  --tc-white: white;
+  --tc-azul: #4DBCE9;
+  --tc-azulBalck: #265E70;
+}
+
+body {
+  background: var(--tc-white);
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  /* font-family: 'Raleway', sans-serif; */
+}
+
+img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.header {
+  background: var(--bc-black);
+  height: 10rem;
+  display: flex;
+  min-width: 100vw;
+  gap: 3rem;
+  align-items: center;
+}
+
+.header h1 {
+  font-family: 'Raleway';
+  font-weight: 500;
+  font-size: 4.8rem;
+  line-height: 5.6rem;
+  
+  color:var(--tc-white);
+}
+
+.main {
+  display: flex;
+  width: fit-content;
+  margin: 8rem auto;
+  justify-content: space-around;
+}
+
+.main .main-wrapper {
+  width: 61.4rem;
+}
+
+.main .main-wrapper h2 {
+  font-weight: 400;
+  font-size: 3.6rem;
+  line-height: 4.4rem;
+  text-align: center;
+  
+  color: var(--tc-azulBalck);
+}
+
+.main .main-wrapper h2 strong {
+  font-weight: 700;
+  font-size: 3.6rem;
+  line-height: 4.4rem;
+}
+
+.main .main-wrapper .main-img {
+  width: 60rem;
+}
+
+.main .main-carrocel h2 {
+  font-weight: 400;
+  font-size: 3.6rem;
+  line-height: 4.4rem;
+  
+  text-align: center;
+  color: var(--tc-azulBalck);
+  margin-bottom: 3rem;
+}
+
+.main-carrocel h2 span {
+  font-weight: 700;
+  font-size: 3.6rem;
+  line-height: 4.4rem;
+  color: var(--tc-azul);
+}
+
+.main-carrocel .carrocel {
+  display: flex;
+  align-items: center;
+}
+
+.carrocel .setas {
+  width: 7.8rem;
+  height: 7.8rem;
+  margin-bottom: 15rem;
+}
+
+/* #seta1 {
+  margin-right: 2rem;
+} */
+
+ul {
+  display: flex;
+}
+
+ul li {
+  font-style: none;
+}
+
+.Carrocel-list {
+  max-width: 54rem;
+  overflow: hidden;
+  gap: 6rem;
+}
+
+.cards .card {
+  width: 50rem;
+  height: 52rem;
+  background: var(--bc-azul);
+  border-radius: 1.5rem;
+  margin: 2.8rem 3rem 0rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card h3 {
+  font-weight: 700;
+  font-size: 3.3rem;
+  line-height: 4rem;
+  
+  margin: 2.8rem auto 0.2rem;
+  color: var(--tc-white);
+}
+
+.card .img-moto {
+  width: 51rem;
+  height: 30rem;
+  display: flex;
+}
+
+.card h6 {
+  font-weight: 400;
+  font-size: 3.1rem;
+  line-height: 3.8rem;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--tc-white);
+}
+
+.card h6 span {
+  width: 21rem;
+  height: 4.6rem;
+  border-radius: 1.5rem;
+  padding: 0.7rem 3rem;
+  background: var(--bc-white);
+
+  margin: 1rem auto 0.7rem;
+
+  font-weight: 700;
+  font-size: 2.7rem; 
+  color: var(--tc-azulBalck);
+}
+
+.card h6 p {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  text-align: center;
+  
+  color: var(--tc-white);
+}
+
+.cards .card-button {
+  width: 34.1rem;
+  height: 7.5rem;
+  margin: 5rem 10.5rem 1rem;
+  
+  background: var(--bc-azul);
+  border-radius: 1.5rem;
+
+  font-weight: 700;
+  font-size: 3.9rem;
+  line-height: 4.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--tc-white);
+  border: none;
+}
+
+.popup {
+  width: 100%;
+  height: 90vw;
+  padding-top: 14rem;
+  top: -18rem;
+  display: flex;
+  background: #000000eb;
+  justify-content: center;
+  position: absolute;
+}
+
+.Info-Card {
+  width: 90rem;
+  height: 80rem;
+  display: grid;
+  justify-items: center;
+  position: absolute;
+  align-content: space-evenly;
+  padding: 4rem 10rem 6rem;
+  
+  background: var(--bc-azul);
+  border-radius: 1.5rem;
+}
+
+main {
+  position: relative;
+}
+
+button {
+  border: none;
+}
+
+.Info-Card .XButton {
+  position: relative;
+  top: -1rem;
+  left: 40rem;
+  background: transparent;
+  display: flex;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  cursor: pointer;
+}
+
+.Info-Card h1 {
+  font-weight: 700;
+  font-size: 3.3rem;
+  line-height: 4rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  
+  color: var(--tc-white);
+}
+
+.Info-Card p {
+  font-family: 'Raleway';
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  text-align: center;
+  
+  color: var(--tc-white);
+}
+
+.Info-Card #CB500 {
+  width: 60rem;
+  height: 50rem;
+}
+
+.Info-Card #PresButton {
+  width: 32.5rem;
+  height: 6.6rem;
+  
+  background: var(--bc-white);
+  border-radius: 1.5rem;
+
+  font-family: 'Raleway';
+  font-weight: 800;
+  font-size: 2.7rem;
+  line-height: 3.2rem;
+  text-align: center;
+  
+  color: var(--tc-azulBalck);
+}
