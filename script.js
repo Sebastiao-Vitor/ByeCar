@@ -18,17 +18,17 @@ setInterval(() => {
 
 const Moto_Card = [
   {
-    XButton: "/images/XButton.svg",
+    XButton: "./images/XButton.svg",
     TitleMoto: "Scooter Elétrica Voltz EV1",
     paragraph: "O câmbio de 5 marchas da Scooter oferece maior confiança e performance na pilotagem, tornando as subidas de marcha mais leves e as reduções mais suaves!",
-    img: "/images/moto1.svg",
+    img: "./images/moto1.svg",
     button: "Quero Assinar!",
   },
   {
-    XButton: "/images/XButton.svg",
+    XButton: "./images/XButton.svg",
     TitleMoto: "Honda CB 500X",
     paragraph: "O câmbio de 6 marchas da CB 500X oferece maior confiança e performance na pilotagem, tornando as subidas de marcha mais leves e as reduções mais suaves!",
-    img: "/images/moto2.svg",
+    img: "./images/moto2.svg",
     button: "Quero Assinar!",
   },
 ];
