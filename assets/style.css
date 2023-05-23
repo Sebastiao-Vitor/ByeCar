@@ -66,12 +66,13 @@ img {
 .main {
   display: flex;
   width: fit-content;
-  margin: 8rem auto;
-  justify-content: space-around;
+  margin: 8rem auto 0rem;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .main .main-wrapper {
-  width: 61.4rem;
+  width: 50rem;
 }
 
 .main .main-wrapper h2 {
@@ -98,7 +99,7 @@ h2:hover {
 }
 
 .main .main-wrapper .main-img {
-  width: 60rem;
+  width: 50rem;
   transition: 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
@@ -142,26 +143,23 @@ h2:hover {
   filter: drop-shadow(1rem 2rem 0.4rem var(--bc-azul));
 }
 
-ul {
-  display: flex;
-}
-
 ul li {
-  font-style: none;
+  list-style: none;
 }
 
 .Carrocel-list {
-  width: 58rem;
+  display: flex;
+  width: 54rem;
   overflow: hidden;
-  gap: 8rem;
+  gap: 3rem;
 }
 
-.cards .card {
-  width: 50rem;
+.card {
+  width: 49rem;
   height: 52rem;
   background: var(--bc-azul);
   border-radius: 1.5rem;
-  margin: 2.8rem 3rem 0rem;
+  margin: 2.8rem 2rem 2rem;
 
   display: flex;
   flex-direction: column;
@@ -170,8 +168,8 @@ ul li {
   cursor: pointer;
 }
 
-.cards .card:hover {
-  scale: 1.1;
+.card:hover {
+  scale: 1.01;
   filter: drop-shadow(4px 8px 4px black);
 }
 
@@ -224,10 +222,10 @@ ul li {
   color: var(--tc-white);
 }
 
-.cards .card-button {
+.card-button {
   width: 34.1rem;
   height: 7.5rem;
-  margin: 5rem 10.5rem 5rem;
+  margin: 5rem 9rem 5rem;
   
   background: var(--bc-azul);
   border-radius: 1.5rem;
@@ -240,23 +238,35 @@ ul li {
   align-items: center;
   color: var(--tc-white);
   border: none;
+  cursor: pointer;
   filter: drop-shadow(0.5rem 1rem 0.2rem black);
   transition: 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-.cards .card-button:hover {
+.card-button:hover {
   scale: 1.1;
+}
+
+/* trasições */
+.Info-Card, 
+.Info-Card .XButton, 
+.Info-Card h1, 
+.Info-Card p, 
+.Info-Card #CB500, 
+.Info-Card #PresButton {
+  transition: 200ms ease-in-out;
 }
 
 .popup {
   width: 100%;
-  height: 90vw;
-  padding-top: 14rem;
-  top: -18rem;
+  height: 100%;
+  top: 0;
+  left: 0;
   display: flex;
   background: #000000eb;
-  justify-content: center;
+  justify-content: space-around;
   position: absolute;
+  align-items: center;
 }
 
 .Info-Card {
@@ -270,10 +280,10 @@ ul li {
   
   background: var(--bc-azul);
   border-radius: 1.5rem;
-  filter: drop-shadow(9rem 20rem 1.5rem black);
+  filter: drop-shadow(2rem 3rem 1rem black);
 }
 
-main {
+body {
   position: relative;
 }
 
@@ -290,7 +300,6 @@ button {
   transform: matrix(-1, 0, 0, 1, 0, 0);
   cursor: pointer;
   filter: drop-shadow(-0.8rem 0.4rem 0.2rem black);
-  transition: 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 .Info-Card .XButton:hover {
@@ -305,7 +314,6 @@ button {
   margin-bottom: 2rem;
   
   color: var(--tc-white);
-  transition: 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 .Info-Card h1:hover {
@@ -319,7 +327,6 @@ button {
   font-size: 2rem;
   line-height: 2.3rem;
   text-align: center;
-  transition: 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
   
   color: var(--tc-white);
 }
@@ -331,7 +338,6 @@ button {
 .Info-Card #CB500 {
   width: 60rem;
   height: 50rem;
-  transition: 0.5s cubic-bezier(0.4, 0, 0.94, 1.05);
 }
 
 .Info-Card #CB500:hover {
@@ -353,11 +359,14 @@ button {
   text-align: center;
   
   color: var(--tc-azulBalck);
+  cursor: pointer;
   filter: drop-shadow(0.9rem 1rem 0.3rem black);
-  transition: 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 .Info-Card #PresButton:hover {
   scale: 1.2;
+}
 
+@media (min-width: 1000pz) {
+  
 }
