@@ -11,7 +11,7 @@
 Projeto construído através do projeto que nos foi proposto em aula,
 de criar uma landing Page implementando a funcionalidade de um carrossel.
 
-> [🔗 Clique aqui para acessar da Page]()
+> [🔗 Clique aqui para acessar da Page](https://layout-bye-car-dnc-school.netlify.app)
 
 # 🧰🛠️ Tecnologias
 
