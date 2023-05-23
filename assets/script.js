@@ -14,7 +14,7 @@ setInterval(() => {
   } else {
     show(index + 1);
   }
-}, 5000);
+}, 6000);
 
 const Moto_Card = [
   {
@@ -55,5 +55,5 @@ function InfoCardShow(index) {
 }
 
 function InfoCardClose(index) {
-  popUp.style.visibility = "collapse";
+  popUp.style.visibility = "hidden";
 }
