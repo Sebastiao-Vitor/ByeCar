@@ -20,7 +20,6 @@ de criar uma landing Page implementando a funcionalidade de um carrossel.
 - Git e Github
 - Grid
 - Variavéis
-- Mobile-First
 - Acessibilidade
 - WEB
 - FIGMA
